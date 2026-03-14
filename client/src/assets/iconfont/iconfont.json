@@ -1,0 +1,44 @@
+{
+  "id": "5139279",
+  "name": "icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "867521",
+      "name": "在线客服",
+      "font_class": "zaixiankefu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2425545",
+      "name": "chat_file_fail",
+      "font_class": "chat_file_fail",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "6775644",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "eca1",
+      "unicode_decimal": 60577
+    },
+    {
+      "icon_id": "35400444",
+      "name": "AI",
+      "font_class": "AI",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "38712090",
+      "name": "AI聊天",
+      "font_class": "AIliaotian",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    }
+  ]
+}
