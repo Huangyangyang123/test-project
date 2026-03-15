@@ -41,4 +41,4 @@ jobs:
             git pull origin main             # 更新代码
             npm install
             npm run build
-            pm2 restart node-server || pm2 start server.js --name node-server
+            pm2 restart node-server || pm2 start /serve/server.js --name node-server
