@@ -6,25 +6,25 @@ const cors = require('cors');
 const http = require("http");
 const path = require('path');
 const createWebSocketServer = require('./ws');
-const connectMongo = require('./mongo');
+// const connectMongo = require('./mongo');
 
 const app = express();
 
 // 提供前端生产文件
 app.use(express.static(path.join(__dirname, '../dist')));
 
-app.use(cors());
-app.use(express.json());
-connectMongo();
-const server = http.createServer(app);
-createWebSocketServer(server);
+// app.use(cors());
+// app.use(express.json());
+// // connectMongo();
+// const server = http.createServer(app);
+// createWebSocketServer(server);
 
 // 获取聊天记录 API
-app.get("/history/:room", async (req, res) => {
-  const Message = require('./models/Message');
-  const logs = await Message.find({ room: req.params.room });
-  res.json(logs);
-});
+// app.get("/history/:room", async (req, res) => {
+//   const Message = require('./models/Message');
+//   const logs = await Message.find({ room: req.params.room });
+//   res.json(logs);
+// });
 
 // 启动
 server.listen(3001, () => {
