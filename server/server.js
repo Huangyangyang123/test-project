@@ -8,6 +8,10 @@ const createWebSocketServer = require('./ws');
 const connectMongo = require('./mongo');
 
 const app = express();
+
+// 提供前端生产文件
+app.use(express.static(path.join(__dirname, '../dist')));
+
 app.use(cors());
 app.use(express.json());
 connectMongo();
