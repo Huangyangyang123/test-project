@@ -36,4 +36,5 @@ jobs:
 
             # 进入后端目录启动 Node 服务
             cd server
+            npm install
             pm2 restart node-server || pm2 start serve.js --name node-server
