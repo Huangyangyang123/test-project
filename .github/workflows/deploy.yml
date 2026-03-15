@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # 只有 push 到 main 分支才会触发
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -35,6 +36,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}    # 我们刚才添加的私钥
           port: 22
           script: |
+            source ~/.bashrc   # 加载 Node/npm 环境
             cd /root/myproject/test-project     # 你的生产目录
             git pull origin main             # 更新代码
             npm install
