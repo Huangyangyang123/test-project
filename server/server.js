@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../dist')));
 // app.use(cors());
 // app.use(express.json());
 // // connectMongo();
-// const server = http.createServer(app);
+const server = http.createServer(app);
 // createWebSocketServer(server);
 
 // 获取聊天记录 API
