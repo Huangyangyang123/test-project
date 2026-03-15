@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}    # 我们刚才添加的私钥
           port: 22
           script: |
-            cd /root/myproject               # 你的生产目录
+            cd /root/myproject/test-project     # 你的生产目录
             git pull origin main             # 更新代码
             npm install
             npm run build
