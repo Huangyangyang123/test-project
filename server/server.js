@@ -1,11 +1,11 @@
 // Load environment variables from .env (optional)
-require('dotenv').config();
+// require('dotenv').config();
 
 const express = require('express');
-const cors = require('cors');
-const http = require("http");
+// const cors = require('cors');
+// const http = require("http");
 const path = require('path');
-const createWebSocketServer = require('./ws');
+// const createWebSocketServer = require('./ws');
 // const connectMongo = require('./mongo');
 
 const app = express();

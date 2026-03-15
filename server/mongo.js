@@ -17,6 +17,6 @@ async function connectMongo() {
     // 失败时退出进程，避免服务器在没有 DB 的情况下继续运行
     process.exit(1)
   }
-}
+} 
 
 module.exports = connectMongo;
