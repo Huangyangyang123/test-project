@@ -3,7 +3,6 @@
 
 const express = require('express');
 // const cors = require('cors');
-const http = require("http");
 const path = require('path');
 // const createWebSocketServer = require('./ws');
 // const connectMongo = require('./mongo');
@@ -27,6 +26,6 @@ const server = http.createServer(app);
 // });
 
 // 启动
-server.listen(3001, () => {
+app.listen(3001, () => {
   console.log("服务器已启动：http://localhost:3001");
 });
