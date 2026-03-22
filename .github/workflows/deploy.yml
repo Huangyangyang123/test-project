@@ -31,7 +31,12 @@ jobs:
             npm install
             npm run build
 
+            # 后端目录
             cd server
             npm install
 
-            pm2 restart node-server || pm2 start server.js --name node-server
+            # 清理旧 pm2 进程，启动最新 server.js
+            pm2 describe node-server > /dev/null 2>&1 \
+              && pm2 delete node-server
+            pm2 start server.js --name node-server
+            pm2 save
